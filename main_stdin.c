@@ -6,7 +6,7 @@
 /*   By: kkamashi <kkamashi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/30 06:38:23 by user42            #+#    #+#             */
-/*   Updated: 2020/07/17 11:07:20 by kkamashi         ###   ########.fr       */
+/*   Updated: 2020/07/17 11:58:59 by kkamashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,9 @@ int	main(void)
 			break ;
 		}
 
-		printf("LINE %d\n", i);
+		printf("[LINE: %d]\n", i);
 		printf("-------------------------\n");
-		printf("TEXT: %s\n", line);
-		printf("return_value = %d\n", return_value);
+		printf("[RETURN VALUE: %d] TEXT: \"%s\"\n", return_value, line);
 		if (return_value == 0)
 		{
 			break;

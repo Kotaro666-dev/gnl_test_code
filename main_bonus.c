@@ -6,7 +6,7 @@
 /*   By: kkamashi <kkamashi@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/17 11:20:01 by kkamashi          #+#    #+#             */
-/*   Updated: 2020/07/17 11:42:42 by kkamashi         ###   ########.fr       */
+/*   Updated: 2020/07/17 12:01:26 by kkamashi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,30 +31,27 @@ int main(void)
 		return_value[0] = get_next_line(fd[0], &line);
 		printf("\x1b[31m");     /* 前景色を赤に */
 		printf("-------------------------\n");
-		printf("LINE %d(FIRST TEXT)\n", i);
+		printf("[LINE: %d(FIRST TEXT)]\n", i);
 		printf("-------------------------\n");
-		printf("TEXT: %s\n", line);
-		printf("return_value: %d\n", return_value[0]);
+		printf("[RETURN VALUE: %d] TEXT: \"%s\"\n", return_value[0], line);
 		printf("-------------------------\n");
 		free(line);
 
 		return_value[1] = get_next_line(fd[1], &line);
 		printf("\x1b[32m");     /* 前景色を緑に */
 		printf("-------------------------\n");
-		printf("LINE %d(SECOND TEXT)\n", i);
+		printf("[LINE: %d(SECOND TEXT)]\n", i);
 		printf("-------------------------\n");
-		printf("TEXT: %s\n", line);
-		printf("return_value: %d\n", return_value[1]);
+		printf("[RETURN VALUE: %d] TEXT: \"%s\"\n", return_value[1], line);
 		printf("-------------------------\n");
 		free(line);
 
 		return_value[2] = get_next_line(fd[2], &line);
 		printf("\x1b[33m");     /* 前景色を黄色に */
 		printf("-------------------------\n");
-		printf("LINE %d(THIRD TEXT)\n", i);
+		printf("[LINE: %d(THIRD TEXT)]\n", i);
 		printf("-------------------------\n");
-		printf("TEXT: %s\n", line);
-		printf("return_value: %d\n", return_value[2]);
+		printf("[RETURN VALUE: %d] TEXT: \"%s\"\n", return_value[2], line);
 		printf("-------------------------\n");
 
 		free(line);
